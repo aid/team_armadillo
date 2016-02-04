@@ -1,0 +1,123 @@
+[
+    {
+    "name":"Original Cheese & Tomato",
+    "description":"Our original Cheese & Tomato pizza with even more cheese",
+    "ingredients": [ "Cheese", "Tomato" ],
+    "calories": "",
+    "vegiterian":"True",
+    "url":"original_cheese_and_tomato.png"
+    },
+    {
+    "name":"Mighty Meaty",
+    "description":"Domino’s tomato sauce, pepperoni, ham, ground beef, sausage, red onions, mushrooms and mozzarella cheese. 207kcal / large slice / classic crust.",
+    "ingredients": [ "Pepporoni", "Ham", "Ground Beef", "Sausage", "Red Onions", "Mushrooms", "Mozzarella Cheese" ],
+    "calories": "207",
+    "vegetarian":"False",
+    "url":"mighty_meaty.png"
+    },
+    {
+    "name":"Pepperoni Passion",
+    "description":"Extra pepperoni and extra mozzarella cheese on a Domino’s tomato sauce base. 226kcal / large slice / classic crust.",
+    "ingredients": [ "Extra pepperoni", "Extra Mozzarella Cheese" ],
+    "calories": "226",
+    "vegetarian":"False",
+    "url":"pepperoni_passion.png"
+    },
+    {
+    "name":"Texas BBQ",
+    "description":"Tangy BBQ sauce topped with smoky bacon, succulent roast chicken, red onions, green and red peppers. 199kcal / large slice / classic crust.",
+    "ingredients": [ "BBQ Sauce", "Smoky Bacon", "Roast Chicken", "Red Onions", "Green Peppers", "Red Peppers" ],
+    "calories": "199",
+    "vegetarian":"False",
+    "url":"texas_bbq.png"
+    },
+    {
+    "name":"Vegi Supreme",
+    "description":"Red onions, green and red peppers, sweetcorn, mushrooms, tomatoes. 166kcal / large slice / classic crust.",
+    "ingredients": [ "Red Onions",  "Green Peppers", "Red Peppers", "Sweetcorn", "Mushrooms", "Tomatos" ],
+    "calories": "166",
+    "vegetarian":"True",
+    "url":"vegi_supreme.png"
+    },
+    {
+    "name":"Chicken Feast",
+    "description":"Chicken, mushrooms, sweetcorn. 184kcal / large slice / classic crust.",
+    "ingredients": [ "Chicken", "Mushrooms", "Sweetcorn" ],
+    "calories": "184",
+    "vegetarian":"False",
+    "url":"chicken_feast.png"
+    },
+    {
+    "name":"Ham & Pineappe",
+    "description":"Ham, pineapple. 172kcal / large slice / classic crust.",
+    "ingredients": [ "Ham", "Pineapple" ],
+    "calories": "172",
+    "vegetarian":"False",
+    "url":"ham_and_pineapple.png"
+    },
+    {
+    "name":"Hot & Spicy",
+    "description":"Red onions, ground beef, green and red peppers, jalapeño peppers. 168kcal / large slice / classic crust.",
+    "ingredients": [ "Red Onions", "Ground Beef", "Green Peppers", "Red Peppers", "Jalapeño Peppers" ],
+    "calories": "168",
+    "vegetarian":"False",
+    "url":"hot_and_spicy.png"
+    },
+    {
+    "name":"Meteor",
+    "description":"A light portion of BBQ sauce topped with pork meatballs, ground beef, sausage, pepperoni, smoky bacon. 232kcal / large slice / classic crust.",
+    "ingredients": [ "BBQ Sauce", "Pork Meatballs", "Ground Beef", "Sausage", "pepperami" ],
+    "calories": "232",
+    "vegetarian":"False",
+    "url":"meateor.png"
+    },
+    {
+    "name":"Meatillicious",
+    "description":"Pepperoni, ham, chicken breast strips, smoked bacon rashers, cumberland sausage. 202kcal / large slice / classic crust.",
+    "ingredients": [ "Pepperoni", "Ham", "Chicken Breast Strips", "Smoked Bacon Rashers", "Cumberland Sausage" ],
+    "calories": "202",
+    "vegetarian":"False",
+    "url":"meatilicious.png"
+    },
+    {
+    "name":"New Yorker",
+    "description":"Pepperoni, ham, . 203kcal / large slice / classic crust.",
+    "ingredients": [ "Pepperoni", "Ham", "Bacon", "Mushrooms" ],
+    "calories": "203",
+    "vegetarian":"False",
+    "url":"new_yorker.png"
+    },
+    {
+    "name":"Ranch BBQ",
+    "description":"BBQ sauce, chicken breast strips, pepperoni, ground beef, bacon. 225kcal / large slice / classic crust.",
+    "ingredients": [ "BBQ Sauce", "Chicken Breast Strips", "Pepperoni", "Ground Beef", "Bacon" ],
+    "calories": "225",
+    "vegetarian":"False",
+    "url":"ranch_bbq.png"
+    },
+    {
+    "name":"Dominio's Tandori Hot",
+    "description":"Tandoori chicken, red onions, mushrooms, green and red peppers, jalapeño peppers. 175kcal / large slice / classic crust.",
+    "ingredients": [ "Tandoori Chicken", "Red onions", "Mushrooms", "Green Peppers", "Red Peppers", "Jalapeño Peppers" ],
+    "calories": "175",
+    "vegetarian":"False",
+    "url":"tandoori_hot.png"
+    },
+    {
+    "name":"Tuna Delight",
+    "description":"Tuna, sweetcorn, red onions. 177kcal / large slice / classic crust.",
+    "ingredients": [ "Tuna", "Sweetcorn", "Red Onions" ],
+    "calories": "177",
+    "vegetarian":"False",
+    "url":"tuna_delight.png"
+    },
+    {
+    "name":"Vegi Volcano",
+    "description":"Red onions, green and red peppers, tomatoes, jalapeño peppers, extra mozzarella cheese. 183kcal / large slice / classic crust.",
+    "ingredients": [ "Red Onions", "Green Peppers", "Red Peppers", "Tomatoes", "Jalapeño Peppers", "Extra Mozzarella Cheese" ],
+    "calories": "183",
+    "vegetarian":"True",
+    "url":"vegi_volcano.png"
+    }
+
+]
