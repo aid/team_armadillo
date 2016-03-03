@@ -1,0 +1,102 @@
+pip3 install ipython
+pip3 install virtualenv
+
+cd
+virtualenv SyncHerts
+cd SyncHerts
+source bin/activate
+
+pip install django==1.9.3
+pip install djangorestframework==3.3.2
+pip install markdown==2.6.5
+pip install django-filter==0.12.0
+pip install Pillow==3.1.1
+
+django-admin startproject syncherts
+
+cd syncherts
+
+
+python manage.py migrate
+
+python manage.py startapp meetup
+python manage.py startapp pizza 
+
+<create models in meetup>
+<add meetup into INSTALLED apps>
+
+python manage.py makemigrations meetup
+python manage.py check
+
+<create models in pizza>
+<add pizza into INSTALLED apps>
+
+python manage.py makemigrations pizza
+python manage.py check
+
+python manage.py migrate 
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
+# Import Data
+
+import json
+from pizza.models import Pizza
+
+with file('pizza/data/pizzas.json') as pizza_file:
+    pizzas = json.load(pizza_file)
+    
+for pizza in pizzas:
+    p = Pizza(
+        name = pizza['name'],
+        vegetarian = True if pizza['vegetarian'] == 'True' else False,
+        ingredients = ', '.join(pizza['ingredients']),
+        calories = 0 if pizza['calories'] == '' else int(pizza['calories']),
+        thumbnail_url = pizza['url'],
+        thumbnail = 'pizza/data/pizza_images/pizza/' + pizza['url'])
+    p.save()
+    
+
+# REST APU
+
+
+Add 'rest_framework' to INSTALLED_APPS
+
+Add following to urlpatterns,
+
+url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
+
+http://127.0.0.1:8000/api-auth/login/
+
+
+from pizza.models import Question
+from pizza.serializers import QuestionSerializer
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+
+
+q = Question.objects.filter()[0]
+ 
+s = QuestionSerializer(q, many=False)
+
+>>> s.data
+{'question_text': 'Which is the best pizza?', 'pub_date': '2016-03-02T21:57:56Z', 'pk': 1}
+
+
+>>> s = QuestionSerializer(Question.objects.all(), many=True)
+>>> s.data
+[OrderedDict([('pk', 1), ('question_text', 'Which is the best pizza?'), ('pub_date', '2016-03-02T21:57:56Z')]), OrderedDict([('pk', 2), ('question_text', 'How many pizzas do you eat a day?'), ('pub_date', '2016-03-02T21:58:11Z')]), OrderedDict([('pk', 3), ('question_text', 'Do you think the death penalty is appropriate for those who have stole your pizza?'), ('pub_date', '2016-03-02T21:58:48Z')])]
+>>>
+
+
+>>> print(repr(s))
+QuestionSerializer([<Question: Which is the best pizza?>, <Question: How many pizzas do you eat a day?>, <Question: Do you think the death penalty is appropriate for those who have stole your pizza?>], many=True):
+    pk = IntegerField(read_only=True)
+    question_text = CharField(max_length=200, required=False)
+    pub_date = DateTimeField(required=False)
+	
+
+
