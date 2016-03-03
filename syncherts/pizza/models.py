@@ -22,8 +22,8 @@ class Poll(models.Model):
 
     def __str__(self):
             return "Poll for meeting {m} closing at {t}".format(
-                m=meeting,
-                t=voting_close)
+                m=self.meeting,
+                t=self.voting_close)
 
 class Tally(models.Model):
     poll = models.ForeignKey(Poll)
@@ -32,9 +32,10 @@ class Tally(models.Model):
     
 
     def __str__(self):
-            return "Poll for meeting {m} closing at {t}".format(
-                m=meeting,
-                t=voting_close)
+            return "Telly on Poll {p} for pizza {pz} with count {c}".format(
+                p=self.poll,
+                pz=self.pizza,
+                c=self.voting_count)
 
 class Vote(models.Model):
     attendee_email = models.EmailField()
